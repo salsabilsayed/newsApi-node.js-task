@@ -22,7 +22,7 @@ app.get('/',(req,res)=>{
     
    news((error,data)=>{
        if(error){
-           return res.send({error})
+           return res.render('index',{error})
        }
        res.render('index',{
            newsData: data

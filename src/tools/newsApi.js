@@ -6,7 +6,7 @@ const news = (callback) => {
    request({url:newsUrl,json:true},(error,response)=>{
        // low level error
        if(error){
-           callback(error,undefined)
+           callback('Error occured!',undefined)
            //console.log('Error occured!');
 
        // response error    
