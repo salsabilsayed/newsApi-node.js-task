@@ -1,7 +1,7 @@
 const request = require('request');
 
 const news = (callback) => {
-   const newsUrl = 'https://newsapi.org/v2/everything?q=keyword&apiKey=c4d50f93836c4c2ea180a1bf448d6cfa';
+   const newsUrl = 'https://newsapi.org/v2/top-headlines?country=eg&apiKey=c4d50f93836c4c2ea180a1bf448d6cfa';
 
    request({url:newsUrl,json:true},(error,response)=>{
        // low level error
